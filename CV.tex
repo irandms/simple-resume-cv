@@ -1,0 +1,405 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TeX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,MMMyyyy,nonstop]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, draft, nonstop
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Spencer Moss}
+\newcommand{\CVTitle}{Spencer Moss' CV}
+\newcommand{\CVNote}{}
+\newcommand{\CVWebpage}{http://www.weshouldhavebeenscientists.net}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+
+\begin{subtitle}
+2174 McNary Complex, Corvallis, Oregon, 97331, USA
+\par
+\href{mailto:spencer@weshouldhavebeenscientists.net}
+{spencer@weshouldhavebeenscientists.net}
+\,\SubBulletSymbol\,
++1\,(503)\,915-9352
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\CVWebpage}
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\href{http://www.oregonstate.edu/}
+{\textbf{Oregon State University}},
+Corvallis, Oregon, USA
+
+\GapNoBreak
+\BulletItem
+Bachelor of Science in
+\href{http://www.eecs.oregonstate.edu/}
+{Electrical and Computer Engineering}
+\hfill
+\DatestampYMD{2015}{9}{20} -- Expected 
+\DatestampYMD{2019}{6}{15}
+\begin{detail}
+\SubBulletItem
+Minor: Computer Science
+\SubBulletItem
+Current GPA: 3.78
+\iffalse
+\SubBulletItem
+Current Projected Interest Areas:
+Computer Architecture \& Networks, VLSI, Lasers \& Sensors
+\fi
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Work\newline
+Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\href{http://www.osuosl.org}
+{\textbf{Oregon State University Open Source Lab}},
+Corvallis, Oregon, USA
+
+\GapNoBreak
+\BulletItem
+Student Systems Engineer
+\hfill
+\DatestampYMD{2015}{11}{20} --
+Present
+\begin{detail}
+\SubBulletItem
+Administrate \& maintain a large variety of GNU/Linux systems and Open Source projects; I work closely with customers to meet their projects' needs and demands, using many different technologies to maintain/administrate systems including Debian Linux, CentOS Linux, Nagios, Chef, RT, Cfengine, and more.
+\end{detail}
+
+\href{http://www.dcs-inc.net}
+{\textbf{Digital Control Systems, Inc.}},
+Portland, Oregon, USA
+
+\Gap
+\BulletItem
+Web Developer
+Internship
+\hfill
+\DatestampYMD{2015}{06}{29} --
+\DatestampYMD{2015}{09}{16}
+\begin{detail}
+\SubBulletItem
+Designed \& implemented a custom web application used for data collection and presentation of sensor data collected from various embedded systems using Python, Linux, PostgreSQL, HTML, Bootstrap CSS and the Web2Py framework in an Internet-of-Things style internship project.
+\SubBulletItem
+Worked with embedded systems engineering team to accommodate anticipated customer and engineering team needs; engineered database schema to be scalable with many different embedded devices and sensors.
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Awards \&\newline
+Scholarships}
+{Awards \& Scholarships}
+{PDF:AwardsAndScholarships}
+
+\BulletItem
+Honor Roll, 
+Oregon State University
+\hfill
+Fall 2015 -- Present
+\begin{detail}
+\SubItem
+For maintaining a GPA of over 3.5, Fall Term 2015
+\end{detail}
+
+\Gap
+\BulletItem
+National AP Scholar, 
+College Board
+\hfill
+\DatestampY{2015}
+\begin{detail}
+\SubItem
+For receiving an average of at least 4 (out of 5) on 8 AP exams.
+\end{detail}
+
+\Gap
+\BulletItem
+Computer Science Departmental Award, 
+Wilsonville High School
+\hfill
+\DatestampYM{2015}{05}
+\begin{detail}
+\SubItem
+Awarded for exemplar efforts in studies in the department of Computer Science; volunteered services throughout senior year to create and maintain a computer lab of 32 machines running Xubuntu Linux for use in Physics, Digital Photography, and AP Computer Science courses; served as peer mentor for AP Computer Science A.
+\end{detail}
+
+\GapNoBreak
+\BulletItem
+Honor Roll, 
+Wilsonville High School
+\hfill
+\DatestampYMD{2013}{09}{02} --
+\DatestampYMD{2015}{06}{04}
+\begin{detail}
+\SubItem
+For maintaining a GPA of over 3.5.
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Professional Affiliations\newline
+\& Activities}
+{Professional Affiliations \& Activities}
+{PDF:ProfessionalAffiliationsActivities}
+
+\href{http://www.ieee.org}
+{\textbf{Institute of Electrical and Electronics Engineers}},
+New York, USA
+
+\GapNoBreak
+\BulletItem
+Member
+\hfill
+\DatestampYM{2015}{10} --
+Present
+
+\href{http://www.ieee.org}
+{\textbf{Association for Computing Machinery}},
+New York, USA
+
+\GapNoBreak
+\BulletItem
+Member
+\hfill
+\DatestampYM{2016}{02} --
+Present
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Campus Activities}
+{Campus Activities}
+{PDF:CampusActivities}
+
+\href{http://groups.engr.oregonstate.edu/ieee-new}
+{\textbf{IEEE @ OSU}},
+Oregon State University
+
+\GapNoBreak
+\BulletItem
+Web Administrator
+\hfill
+\DatestampYMD{2015}{11}{05} --
+Present
+\begin{detail}
+\SubBulletItem
+Maintained and wrote web articles \& pages for the IEEE presence at Oregon State University.
+\end{detail}
+
+\href{http://osurobotics.club}
+{\textbf{OSU Robotics Club}},
+Oregon State University
+
+\GapNoBreak
+\BulletItem
+Rover Team, Electrical Sub-team member
+\hfill
+\DatestampYMD{2015}{9}{29} --
+Present
+\begin{detail}
+\SubBulletItem
+Help with various subprojects regarding the Mars Rover Robot as a member of the Electrical sub-team.
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Other Work\newline
+Experience}
+{Other Work Experience}
+{PDF:OtherWorkExperience}
+
+\textbf{Wilsonville High School},
+Wilsonville, Oregon, USA
+
+\GapNoBreak
+\BulletItem
+Teacher's Aide,
+Computer Science \& Conceptual Physics
+\hfill
+\DatestampYMD{2015}{01}{15} --
+\DatestampYMD{2015}{06}{06}
+\begin{detail}
+\SubBulletItem
+Assisted students with problem solving methods in AP Computer Science A and Conceptual Physics courses; demonstrated physical concepts through examples and assisted with carrying out lab activities.
+\end{detail}
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+C,
+C++,
+Java,
+Python,
+HTML \& CSS,
+Linux,
+{\LaTeX},
+LibreOffice \& Microsoft Office,
+Public Speaking
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\section
+{References}
+{References}
+{PDF:References}
+
+\Gap
+\BulletItem
+\textbf{Don Allen}
+\newline
+Chief Executive Officer
+\newline
+Digital Control Systems, Inc.
+\newline
+7401 SW Capitol Highway, 
+Portland, Oregon 97219, USA
+\newline
+\href{mailto:dallen@dcs-inc.net}
+{dallen@dcs-inc.net}
+\,\SubBulletSymbol\,
++1\,(503)\,281-0864
+
+\BigGap
+\BulletItem
+\textbf{Dave Corrigan}
+\newline
+Design Engineer
+\newline
+Digital Control Systems, Inc.
+\newline
+7401 SW Capitol Highway, 
+Portland, Oregon 97219, USA
+\newline
+\href{mailto:dcorrigan@dcs-inc.net}
+{dcorrigan@dcs-inc.net}
+\,\SubBulletSymbol\,
++1\,(503)\,261-3336
+
+\BigGap
+\BulletItem
+\textbf{Charlie Hyman}
+\newline
+Computer Science and Physics Teacher 
+\newline
+Wilsonville High School
+\newline
+6800 SW Wilsonville Rd, 
+Wilsonville, Oregon 97070, USA
+\newline
+\href{mailto:HymanC@wlwv.k12.or.us}
+{HymanC@wlwv.k12.or.us}
+\,\SubBulletSymbol\,
++1\,(503)\,673-7615 + ext 4694
+
+\end{body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\iffalse
+
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]%
+\hspace{2.0mm}\null
+
+\fi
+
+\end{document}
