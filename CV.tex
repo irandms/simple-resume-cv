@@ -36,7 +36,7 @@
 \newcommand{\CVAuthor}{Spencer Moss}
 \newcommand{\CVTitle}{Spencer Moss' CV}
 \newcommand{\CVNote}{}
-\newcommand{\CVWebpage}{http://www.weshouldhavebeenscientists.net}
+\newcommand{\CVWebpage}{https://just.another.computer}
 
 % PDF settings and properties.
 \hypersetup{
@@ -72,10 +72,13 @@ breaklinks}
 \title{\CVAuthor}
 
 \begin{subtitle}
-2174 McNary Complex, Corvallis, Oregon, 97331, USA
+\iffalse
+    28627 SW Crestwood Dr, Wilsonville, Oregon, 97070 USA
+\fi
+
 \par
-\href{mailto:spencer@weshouldhavebeenscientists.net}
-{spencer@weshouldhavebeenscientists.net}
+\href{mailto:spencer@another.computer}
+{spencer@another.computer}
 \,\SubBulletSymbol\,
 +1\,(503)\,915-9352
 \,\SubBulletSymbol\,
@@ -104,17 +107,17 @@ Bachelor of Science in
 \href{http://www.eecs.oregonstate.edu/}
 {Electrical and Computer Engineering}
 \hfill
-\DatestampYMD{2015}{9}{20} -- Expected 
-\DatestampYMD{2019}{6}{15}
+\DatestampYM{2015}{9} -- Expected 
+\DatestampYM{2019}{6}
 \begin{detail}
 \SubBulletItem
 Minor: Computer Science
 \SubBulletItem
-Current GPA: 3.78
+GPA: 3.93
 \iffalse
 \SubBulletItem
-Current Projected Interest Areas:
-Computer Architecture \& Networks, VLSI, Lasers \& Sensors
+Current Interest Areas:
+FOSS/Linux, Embedded Systems, Controls/Sensor Systems, Computer Architecture \& Networks, VLSI
 \fi
 \end{detail}
 
@@ -128,10 +131,27 @@ Experience}
 {Work Experience}
 {PDF:WorkExperience}
 
+\href{http://www.dcs-inc.net}
+{\textbf{Digital Control Systems, Inc.}},
+Portland, Oregon, USA
+\GapNoBreak
+\BulletItem
+Engineering Intern
+\hfill
+\DatestampYMD{2016}{06}{14} --
+\DatestampYMD{2016}{09}{03}
+\begin{detail}
+\SubBulletItem
+Wrote driver level embedded software connecting a Bosch Sensortec BMP280 pressure/temperature sensor to a PIC18 family microcontroller over I\textsuperscript{2}C.
+\SubBulletItem
+Explored and facilitated a movement from old Protel EDA software to KiCad in an effort to reduce costs and move forward with EDA technology.
+\SubBulletItem
+Audited and helped design a web application to be used to connect embedded systems to phones and browsers. Performed QA and regular testing using small C programs and BASH.
+\end{detail}
+
 \href{http://www.osuosl.org}
 {\textbf{Oregon State University Open Source Lab}},
 Corvallis, Oregon, USA
-
 \GapNoBreak
 \BulletItem
 Student Systems Engineer
@@ -140,25 +160,27 @@ Student Systems Engineer
 Present
 \begin{detail}
 \SubBulletItem
-Administrate \& maintain a large variety of GNU/Linux systems and Open Source projects; I work closely with customers to meet their projects' needs and demands, using many different technologies to maintain/administrate systems including Debian Linux, CentOS Linux, Nagios, Chef, RT, Cfengine, and more.
+Administrate \& maintain a large variety of GNU/Linux systems for OSS projects.
+\SubBulletItem
+Work with project managers to meet their needs and demands, using many different technologies to maintain/administrate systems including CentOS Linux, Nagios, Chef, RT, Cfengine, and more.
 \end{detail}
 
 \href{http://www.dcs-inc.net}
 {\textbf{Digital Control Systems, Inc.}},
 Portland, Oregon, USA
-
-\Gap
+\GapNoBreak
 \BulletItem
 Web Developer
-Internship
 \hfill
 \DatestampYMD{2015}{06}{29} --
 \DatestampYMD{2015}{09}{16}
 \begin{detail}
 \SubBulletItem
-Designed \& implemented a custom web application used for data collection and presentation of sensor data collected from various embedded systems using Python, Linux, PostgreSQL, HTML, Bootstrap CSS and the Web2Py framework in an Internet-of-Things style internship project.
+Developed a custom web application used for data collection and presentation of sensor data collected from various embedded systems in an Internet of Things control systems project.
 \SubBulletItem
-Worked with embedded systems engineering team to accommodate anticipated customer and engineering team needs; engineered database schema to be scalable with many different embedded devices and sensors.
+Engineered a database schema to be scalable with many different embedded devices and sensors, as per anticipated customer and design engineering needs.
+\SubBulletItem
+Used Python with the Web2Py framework in addition to Linux, PostgreSQL, HTML5 and Bootstrap CSS.
 \end{detail}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -171,48 +193,35 @@ Scholarships}
 {Awards \& Scholarships}
 {PDF:AwardsAndScholarships}
 
+\textbf{Pacific Power Scholar,}
+Pacific Power / OSU School of EECS
+\hfill
+Summer 2016 -- Present
+\GapNoBreak
+\begin{detail}
 \BulletItem
-Honor Roll, 
+Awarded a scholarship of \$1500 for outstanding performance in the department of EECS at Oregon State University.
+\end{detail}
+
+\textbf{Honor Roll,}
 Oregon State University
 \hfill
 Fall 2015 -- Present
+\GapNoBreak
 \begin{detail}
-\SubItem
-For maintaining a GPA of over 3.5, Fall Term 2015
+\BulletItem
+For maintaining a GPA of over 3.5, for all terms in the year of 2015-2016
 \end{detail}
 
 \Gap
-\BulletItem
-National AP Scholar, 
-College Board
-\hfill
-\DatestampY{2015}
-\begin{detail}
-\SubItem
-For receiving an average of at least 4 (out of 5) on 8 AP exams.
-\end{detail}
-
-\Gap
-\BulletItem
-Computer Science Departmental Award, 
+\textbf{Computer Science Departmental Award,}
 Wilsonville High School
 \hfill
 \DatestampYM{2015}{05}
-\begin{detail}
-\SubItem
-Awarded for exemplar efforts in studies in the department of Computer Science; volunteered services throughout senior year to create and maintain a computer lab of 32 machines running Xubuntu Linux for use in Physics, Digital Photography, and AP Computer Science courses; served as peer mentor for AP Computer Science A.
-\end{detail}
-
 \GapNoBreak
-\BulletItem
-Honor Roll, 
-Wilsonville High School
-\hfill
-\DatestampYMD{2013}{09}{02} --
-\DatestampYMD{2015}{06}{04}
 \begin{detail}
-\SubItem
-For maintaining a GPA of over 3.5.
+\BulletItem
+Awarded for exemplar efforts in studies in the department of Computer Science; volunteered senior year to create and maintain a computer lab of 32 machines running Xubuntu GNU/Linux for use in Physics, Digital Photography, and AP Computer Science courses; served as peer mentor for AP Computer Science.
 \end{detail}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -227,7 +236,6 @@ For maintaining a GPA of over 3.5.
 
 \href{http://www.ieee.org}
 {\textbf{Institute of Electrical and Electronics Engineers}},
-New York, USA
 
 \GapNoBreak
 \BulletItem
@@ -236,9 +244,8 @@ Member
 \DatestampYM{2015}{10} --
 Present
 
-\href{http://www.ieee.org}
+\href{http://www.acm.org}
 {\textbf{Association for Computing Machinery}},
-New York, USA
 
 \GapNoBreak
 \BulletItem
@@ -265,11 +272,13 @@ Oregon State University
 Web Administrator
 \hfill
 \DatestampYMD{2015}{11}{05} --
-Present
+\DatestampYMD{2016}{06}{10}
 \begin{detail}
 \SubBulletItem
-Maintained and wrote web articles \& pages for the IEEE presence at Oregon State University.
+Maintained and wrote web articles \& pages for the IEEE presence at Oregon State University; Worked to revitalize campus presence before merging with the Robotics Club.
 \end{detail}
+
+\iffalse
 
 \href{http://osurobotics.club}
 {\textbf{OSU Robotics Club}},
@@ -283,12 +292,16 @@ Rover Team, Electrical Sub-team member
 Present
 \begin{detail}
 \SubBulletItem
-Help with various subprojects regarding the Mars Rover Robot as a member of the Electrical sub-team.
+Helped with small subprojects regarding the Mars Rover Robot as a member of the Electrical sub-team.
 \end{detail}
+
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% OTHER WORK EXPERIENCE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iffalse
 
 \section
 {Other Work\newline
@@ -311,6 +324,8 @@ Computer Science \& Conceptual Physics
 Assisted students with problem solving methods in AP Computer Science A and Conceptual Physics courses; demonstrated physical concepts through examples and assisted with carrying out lab activities.
 \end{detail}
 
+\fi
+
 %%%%%%%%%%%%
 %% SKILLS %%
 %%%%%%%%%%%%
@@ -320,19 +335,22 @@ Assisted students with problem solving methods in AP Computer Science A and Conc
 {Skills}
 {PDF:Skills}
 
-C,
-C++,
-Java,
-Python,
-HTML \& CSS,
+C \& C++,
 Linux,
+Python,
+AVR,
+Java,
+HTML \& CSS,
 {\LaTeX},
-LibreOffice \& Microsoft Office,
-Public Speaking
+LibreOffice,
+Technical Writing,
+KiCad
 
 %%%%%%%%%%%%%%%%
 %% REFERENCES %%
 %%%%%%%%%%%%%%%%
+
+\iffalse
 
 \section
 {References}
@@ -341,19 +359,20 @@ Public Speaking
 
 \Gap
 \BulletItem
-\textbf{Don Allen}
+\textbf{Justin Dugger}
 \newline
-Chief Executive Officer
+Senior Systems Architect
 \newline
-Digital Control Systems, Inc.
+Oregon State University Open Source Lab
 \newline
-7401 SW Capitol Highway, 
-Portland, Oregon 97219, USA
+1800 SW Campus Way
+224 Milne Computer Center
+Corvallis, OR 97331
 \newline
-\href{mailto:dallen@dcs-inc.net}
-{dallen@dcs-inc.net}
+\href{mailto:jldugger@osuosl.org}
+{jldugger@osuosl.org}
 \,\SubBulletSymbol\,
-+1\,(503)\,281-0864
++1\,(541)\,737-9900
 
 \BigGap
 \BulletItem
@@ -386,6 +405,8 @@ Wilsonville, Oregon 97070, USA
 {HymanC@wlwv.k12.or.us}
 \,\SubBulletSymbol\,
 +1\,(503)\,673-7615 + ext 4694
+
+\fi
 
 \end{body}
 
