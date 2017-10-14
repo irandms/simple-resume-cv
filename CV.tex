@@ -71,7 +71,7 @@ breaklinks}
 \title{\CVAuthor}
 
 \begin{subtitle}
-    28627 SW Crestwood Drive, Wilsonville, Oregon, 97070 USA
+    Wilsonville, Oregon, 97070 USA
 
 \par
 \href{mailto:spencer@another.computer}
@@ -110,11 +110,11 @@ Bachelor of Science in
 \SubBulletItem
 Minor: Computer Science
 \SubBulletItem
-GPA: 3.92
+GPA: 3.88
 \iffalse
 \SubBulletItem
 Current Interest Areas:
-FOSS/Linux, Embedded Systems, Controls/Sensor Systems, Computer Architecture, VLSI
+Embedded Systems, FOSS/Linux, Controls/Sensor Systems, Computer Architecture, VLSI, FPGAs
 \fi
 \end{detail}
 
@@ -128,6 +128,22 @@ Experience}
 {Work Experience}
 {PDF:WorkExperience}
 
+\href{http://www.dcs-inc.net}
+{\textbf{Digital Control Systems, Inc.}},
+Portland, Oregon, USA
+\GapNoBreak
+\BulletItem
+Engineering Intern
+\hfill
+\DatestampYMD{2017}{06}{14} --
+\DatestampYMD{2017}{09}{15}
+\begin{detail}
+\SubBulletItem
+Implemented driver code for PIC18F family microcontrollers to operate with SSD1351 OLED driver/controller IC.
+\SubBulletItem
+Tested, characterized, and reviewed OLED and TFT screens for use in a custom product.
+\end{detail}
+
 \href{http://cgrb.oregonstate.edu/}
 {\textbf{Center for Genome Research and Biocomputing}},
 Corvallis, Oregon, USA
@@ -136,10 +152,12 @@ Corvallis, Oregon, USA
 Computational Researcher
 \hfill
 \DatestampYMD{2017}{03}{16} --
-Present
+\DatestampYMD{2017}{06}{10}
 \begin{detail}
 \SubBulletItem
 Part of a team for designing custom hardware and firmware for an IoT-scale project.
+\SubBulletItem
+Worked on implementing an extension of the 1-Wire communications bus on AVR microcontrollers.
 \end{detail}
 
 \href{http://www.dcs-inc.net}
@@ -168,7 +186,7 @@ Corvallis, Oregon, USA
 Student Systems Engineer
 \hfill
 \DatestampYMD{2015}{11}{20} --
-Present
+\DatestampYMD{2017}{06}{03}
 \begin{detail}
 \SubBulletItem
 Administrate \& maintain a large variety of GNU/Linux systems for OSS projects.
@@ -176,6 +194,7 @@ Administrate \& maintain a large variety of GNU/Linux systems for OSS projects.
 Work with project managers to meet their needs and demands, using many different technologies to maintain/administer systems including CentOS GNU/Linux, Nagios, Chef, RT, Cfengine, and more.
 \end{detail}
 
+\iffalse
 \href{http://www.dcs-inc.net}
 {\textbf{Digital Control Systems, Inc.}},
 Portland, Oregon, USA
@@ -193,6 +212,7 @@ Engineered a database schema to be scalable with many different embedded devices
 \SubBulletItem
 Used Python with the Web2Py framework in addition to Linux, PostgreSQL, HTML5 and Bootstrap CSS.
 \end{detail}
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% AWARDS & SCHOLARSHIPS %%
@@ -204,12 +224,12 @@ Scholarships}
 {Awards \& Scholarships}
 {PDF:AwardsAndScholarships}
 
-\textbf{Pacific Power Scholar,}
-Pacific Power / OSU School of EECS
+\textbf{Alexander Memorial Scholarship,}
+OSU School of EECS
 \GapNoBreak
 \begin{detail}
 \BulletItem
-Awarded a scholarship of \$1500 for outstanding performance in the department of EECS at Oregon State University.
+Awarded a scholarship of \$13,000 for outstanding performance in the top 40\% of the department of EECS at Oregon State University.
 \end{detail}
 
 \textbf{Honor Roll,}
@@ -217,7 +237,7 @@ Oregon State University
 \GapNoBreak
 \begin{detail}
 \BulletItem
-For maintaining a GPA of over 3.5, for all terms in the year of 2015-2016
+For maintaining a GPA of over 3.5, for all terms in the years of 2015-2017
 \end{detail}
 
 \iffalse
@@ -230,6 +250,30 @@ Wilsonville High School
 Awarded for exemplar efforts in studies in the department of Computer Science; volunteered senior year to create and maintain a computer lab of 32 machines running Xubuntu GNU/Linux for use in Physics, Digital Photography, and AP Computer Science courses; served as peer mentor for AP Computer Science.
 \end{detail}
 \fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROJECTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+{Projects}
+{Projects}
+
+\textbf{Nintendo 64 controller driver,} Digital Logic Design
+\GapNoBreak
+\begin{detail}
+\BulletItem
+Implemented a driver/controller module in a Lattice Semiconductor MACH FPGA, for adapting a Nintendo 64 controller to interface with older NES and SNES game consoles.
+\end{detail}
+
+
+\textbf{Minimal input calculator,} OSU Engineering Expo 2017
+\GapNoBreak
+\begin{detail}
+\BulletItem
+Designed a small board using an ATmega328p microcontroller to do simple 8-bit arithmetic using only 2 switches and 1 pushbutton (add/subtract/divide/multiply). Submitted and displayed at the yearly OSU Engineering Expo.
+\end{detail}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
@@ -252,23 +296,6 @@ Member of the
 Member of the
 \href{http://www.acm.org}
 {\textbf{Association for Computing Machinery}}
-
-\Gap
-
-\href{http://groups.engr.oregonstate.edu/ieee-new}
-{\textbf{IEEE @ OSU}},
-Oregon State University
-
-\GapNoBreak
-\BulletItem
-Web Administrator
-\hfill
-\DatestampYMD{2015}{11}{05} --
-\DatestampYMD{2016}{06}{10}
-\begin{detail}
-\SubBulletItem
-Maintained and wrote web articles \& pages for the IEEE presence at Oregon State University; Worked to revitalize campus presence before merging with the Robotics Club.
-\end{detail}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% CAMPUS ACTIVITIES %%
@@ -354,31 +381,26 @@ Assisted students with problem solving methods in AP Computer Science A and Conc
 GNU/Linux,
 Open Source,
 C,
-Python,
-Git,
 AVR,
-Arduino,
 Embedded Systems,
-C++,
-BASH,
-Java,
+Git,
+Software Testing,
 Debugging (GDB),
+Python,
+PIC,
+Digital Logic Design,
+FPGAs (Lattice Diamond),
+SystemVerilog,
+ModelSim,
 I\textsuperscript{2}C,
-Apache,
-Networking,
-Databases (PostgreSQl/MySQL),
-Systems/Server Administration,
-Web Development,
+SPI,
 {\LaTeX},
 Technical Writing,
-KiCad
 
 %%%%%%%%%%%%%%%%
 %% REFERENCES %%
 %%%%%%%%%%%%%%%%
-
 \iffalse
-
 \section
 {References}
 {References}
@@ -434,13 +456,11 @@ Wilsonville, Oregon 97070, USA
 +1\,(503)\,673-7615 + ext 4694
 
 \fi
-
 \end{body}
 
 %%%%%%%%%%%
 % CV NOTE %
 %%%%%%%%%%%
-
 \iffalse
 
 \UseNoteFont%
@@ -449,5 +469,4 @@ Wilsonville, Oregon 97070, USA
 \hspace{2.0mm}\null
 
 \fi
-
 \end{document}
